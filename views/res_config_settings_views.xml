@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pos.default.numpad.mode</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='pos_interface_section']" position="inside">
+                <setting
+                    id="default_numpad_mode"
+                    string="Default Numpad Mode"
+                    help="Choose the numpad function selected when the Point of Sale interface opens."
+                >
+                    <field name="pos_default_numpad_mode"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

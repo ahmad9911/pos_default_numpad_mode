@@ -1,0 +1,105 @@
+<section class="container py-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4">POS Default Numpad Mode</h1>
+        <p class="lead">Choose how your POS numpad starts.</p>
+        <p class="text-muted">Free &bull; Odoo 18 Community &bull; LGPL-3</p>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <h2>Overview</h2>
+            <p>
+                Odoo normally starts the POS numpad in Quantity mode. This addon lets
+                each Point of Sale configuration choose its preferred initial mode.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-4 mb-3">
+            <div class="border rounded p-4 h-100">
+                <h3>Quantity</h3>
+                <p class="mb-0">Start with the standard quantity-editing behavior.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="border rounded p-4 h-100">
+                <h3>Price</h3>
+                <p class="mb-0">Start ready to edit the selected order line price.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="border rounded p-4 h-100">
+                <h3>Discount</h3>
+                <p class="mb-0">Start ready to enter a line discount when enabled.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-6 mb-4">
+            <h2>Per-POS Configuration</h2>
+            <p>
+                Different Point of Sale configurations can use different defaults.
+                Changing one POS does not affect another.
+            </p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <h2>Native POS Behavior</h2>
+            <p>
+                The selected mode is applied only initially. Cashiers can continue
+                switching normally between Quantity, Price, and Discount afterward.
+                The addon does not replace or lock the native numpad.
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <h2>Configuration</h2>
+            <p>
+                Point of Sale &rarr; Configuration &rarr; Settings &rarr;
+                Default Numpad Mode
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-11 text-center">
+            <img
+                src="main_screenshot.png"
+                class="img-fluid border rounded mb-3"
+                alt="Default Numpad Mode configured as Price in Odoo POS settings"
+            >
+            <p class="text-muted mb-5">Choose the default numpad mode from POS settings.</p>
+
+            <img
+                src="price_mode.png"
+                class="img-fluid border rounded mb-3"
+                alt="Odoo POS native numpad with Price mode selected"
+            >
+            <p class="text-muted">POS starts directly in Price mode when configured.</p>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+            <h2>Compatibility</h2>
+            <p>
+                Odoo 18.0 Community Edition tested. Suitable for self-hosted Odoo and
+                Odoo.sh environments where custom Python addons are supported.
+            </p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h2>Dependencies</h2>
+            <p>
+                Requires only <strong>point_of_sale</strong>. No external Python
+                libraries or external services are required.
+            </p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h2>License</h2>
+            <p>Free software distributed under LGPL-3.</p>
+        </div>
+    </div>
+</section>
