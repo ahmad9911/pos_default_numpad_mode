@@ -5,6 +5,8 @@
     "summary": "Choose Quantity, Price, or Discount as the initial POS numpad mode.",
     "author": "Optramo",
     "maintainer": "Optramo",
+    "website": "https://optramo.com",
+    "support": "hello@optramo.com",
     "license": "LGPL-3",
     "depends": ["point_of_sale"],
     "data": [
